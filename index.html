@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RW3T0XC06N"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-RW3T0XC06N');
+</script>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moringa Wellness - Premium Plant-Based Nutrition</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1e6f5c;
+            --primary-light: #289672;
+            --secondary: #f9b82b;
+            --dark: #1a2e35;
+            --light: #f5f9f8;
+            --white: #ffffff;
+            --gray: #e0e0e0;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        body {
+            color: var(--dark);
+            line-height: 1.6;
+            background-color: var(--light);
+            position: relative;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Header */
+        header {
+            background-color: var(--white);
+            box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+            position: fixed;
+            width: 100%;
+            z-index: 100;
+            padding: 12px 0;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 26px;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+        }
+        
+        .logo span {
+            color: var(--secondary);
+        }
+        
+        /* Hero Section */
+        .hero {
+            padding: 160px 0 80px;
+            background: linear-gradient(145deg, rgba(30,111,92,0.08) 0%, rgba(255,255,255,1) 100%);
+            position: relative;
+        }
+        
+        .hero-content {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+        
+        .hero-text {
+            flex: 1;
+        }
+        
+        .hero-image {
+            flex: 1;
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+        }
+        
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 42px;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 15px;
+            line-height: 1.3;
+        }
+        
+        .subtitle {
+            font-size: 18px;
+            color: var(--primary);
+            margin-bottom: 25px;
+            font-weight: 500;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(to right, var(--primary), var(--primary-light));
+            color: var(--white);
+            padding: 14px 35px;
+            text-decoration: none;
+            border-radius: 45px;
+            font-weight: 600;
+            margin-top: 15px;
+            font-size: 16px;
+            transition: all 0.3s;
+            box-shadow: 0 4px 12px rgba(30,111,92,0.25);
+            border: none;
+            cursor: pointer;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(30,111,92,0.35);
+        }
+        
+        /* Benefits Section */
+        .benefits {
+            padding: 80px 0;
+            background-color: var(--white);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .section-title h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 34px;
+            color: var(--dark);
+            margin-bottom: 12px;
+        }
+        
+        .section-title p {
+            color: #666;
+            max-width: 650px;
+            margin: 0 auto;
+            font-size: 15px;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        
+        .benefit-card {
+            background: var(--white);
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+        
+        .benefit-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.09);
+        }
+        
+        .benefit-icon {
+            width: 70px;
+            height: 70px;
+            margin: 0 auto 15px;
+            background-color: rgba(30,111,92,0.08);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            font-size: 28px;
+        }
+        
+        .benefit-card h3 {
+            font-size: 20px;
+            margin-bottom: 12px;
+            color: var(--dark);
+        }
+        
+        .benefit-card p {
+            font-size: 14px;
+            color: #555;
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            padding: 80px 0;
+            background-color: var(--light);
+        }
+        
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        
+        .testimonial-card {
+            background: var(--white);
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 18px;
+            position: relative;
+            font-size: 15px;
+        }
+        
+        .testimonial-text::before {
+            content: '"';
+            font-size: 50px;
+            color: var(--gray);
+            position: absolute;
+            top: -15px;
+            left: -8px;
+            line-height: 1;
+            z-index: 0;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+        
+        .author-avatar {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 12px;
+        }
+        
+        .author-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .author-info h4 {
+            font-size: 16px;
+            margin-bottom: 4px;
+        }
+        
+        .author-info p {
+            color: #666;
+            font-size: 13px;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            padding: 80px 0;
+            background: linear-gradient(145deg, var(--primary) 0%, var(--primary-light) 100%);
+            color: var(--white);
+            text-align: center;
+        }
+        
+        .cta-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 34px;
+            margin-bottom: 18px;
+        }
+        
+        .cta-section p {
+            max-width: 650px;
+            margin: 0 auto 25px;
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        
+        .white-button {
+            background: var(--white);
+            color: var(--primary);
+        }
+        
+        .white-button:hover {
+            box-shadow: 0 6px 20px rgba(255,255,255,0.25);
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: var(--white);
+            padding: 50px 0 25px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .footer-column h3 {
+            font-size: 17px;
+            margin-bottom: 18px;
+            color: var(--secondary);
+        }
+        
+        .footer-column p {
+            font-size: 14px;
+            color: #ccc;
+            line-height: 1.6;
+        }
+        
+        .footer-column ul {
+            list-style: none;
+        }
+        
+        .footer-column ul li {
+            margin-bottom: 8px;
+        }
+        
+        .footer-column ul li a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-size: 14px;
+        }
+        
+        .footer-column ul li a:hover {
+            color: var(--white);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 25px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #999;
+            font-size: 13px;
+        }
+        
+        /* Guarantee Badge */
+        .guarantee-badge {
+            display: inline-flex;
+            align-items: center;
+            background: var(--white);
+            color: var(--primary);
+            padding: 8px 18px;
+            border-radius: 45px;
+            font-weight: 600;
+            margin-top: 25px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            font-size: 14px;
+        }
+        
+        .guarantee-badge img {
+            width: 25px;
+            margin-right: 8px;
+        }
+        
+        /* Responsive */
+        @media (max-width: 992px) {
+            .hero-content {
+                flex-direction: column;
+                gap: 30px;
+            }
+            
+            .hero-text {
+                text-align: center;
+            }
+            
+            .hero-image {
+                max-width: 450px;
+                margin: 0 auto;
+                order: -1;
+            }
+            
+            h1 {
+                font-size: 34px;
+            }
+            
+            .subtitle {
+                font-size: 16px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 30px;
+            }
+            
+            .section-title h2 {
+                font-size: 30px;
+            }
+            
+            .cta-section h2 {
+                font-size: 30px;
+            }
+            
+            .benefits-grid, .testimonials-grid {
+                grid-template-columns: 1fr;
+                max-width: 500px;
+                margin: 0 auto;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 28px;
+            }
+            
+            .section-title h2 {
+                font-size: 26px;
+            }
+            
+            .cta-section h2 {
+                font-size: 26px;
+            }
+            
+            .cta-button {
+                padding: 12px 30px;
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="https://7eccbo3hq2t81u58ybogozvwt8.hop.clickbank.net" class="logo">Moringa<span>Wellness</span></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Unlock Nature's Nutritional Treasure</h1>
+                    <p class="subtitle">Premium Moringa Supplement for Enhanced Energy, Immunity, and Overall Wellbeing</p>
+                    <a href="https://7eccbo3hq2t81u58ybogozvwt8.hop.clickbank.net" class="cta-button">EXPERIENCE MORINGA BENEFITS</a>
+                    <div class="guarantee-badge">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828640.png" alt="Guarantee">
+                        60-Day Satisfaction Guarantee
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://i.ibb.co/DHx9GtTN/Desain-tanpa-judul-1-removebg-preview.png" alt="Moringa Supplement">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <div class="container">
+            <div class="section-title">
+                <h2>The Remarkable Benefits of Moringa</h2>
+                <p>Our carefully formulated supplement harnesses the full potential of this ancient superfood</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🌱</div>
+                    <h3>Complete Nutrition</h3>
+                    <p>Contains nearly 100 vital nutrients including vitamins, minerals, and essential amino acids your body needs.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🔋</div>
+                    <h3>Natural Vitality</h3>
+                    <p>Provides clean, lasting energy without the ups and downs of caffeine or sugar.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">❤️</div>
+                    <h3>Circulatory Support</h3>
+                    <p>Promotes healthy blood flow and cardiovascular function for long-term heart health.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🛡️</div>
+                    <h3>Defense Boost</h3>
+                    <p>Powerful antioxidants help strengthen your body's natural defense mechanisms.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🧠</div>
+                    <h3>Sharp Mind</h3>
+                    <p>Supports mental focus and clarity while helping combat cognitive fatigue.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">✨</div>
+                    <h3>Recovery Aid</h3>
+                    <p>Helps reduce inflammation and supports faster recovery after physical activity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Real People, Real Results</h2>
+                <p>Discover what others are saying about their experience with our moringa supplement</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        <p>After three months of consistent use, my energy has never been better. I've stopped relying on multiple cups of coffee just to get through my day.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Sarah J.">
+                        </div>
+                        <div class="author-info">
+                            <h4>Sarah J.</h4>
+                            <p>Verified Buyer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        <p>My recent blood tests showed remarkable improvements in several key health markers. Even my physician asked what changes I'd made to my routine.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael T.">
+                        </div>
+                        <div class="author-info">
+                            <h4>Michael T.</h4>
+                            <p>Verified Buyer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        <p>Between work and family, I was constantly drained. This supplement helped restore my natural energy levels so I can be present for what matters most.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Lisa M.">
+                        </div>
+                        <div class="author-info">
+                            <h4>Lisa M.</h4>
+                            <p>Verified Buyer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Begin Your Wellness Journey Today</h2>
+            <p>Join countless others who have discovered the transformative power of premium moringa supplementation. Take the first step toward better health now.</p>
+            <a href="https://7eccbo3hq2t81u58ybogozvwt8.hop.clickbank.net" class="cta-button white-button">ORDER YOUR SUPPLY NOW</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Moringa Wellness</h3>
+                    <p>Providing high-quality plant-based nutrition to support your health goals and active lifestyle.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="https://7eccbo3hq2t81u58ybogozvwt8.hop.clickbank.net">Home</a></li>
+                        <li><a href="https://7eccbo3hq2t81u58ybogozvwt8.hop.clickbank.net">Product Benefits</a></li>
+                        <li><a href="https://7eccbo3hq2t81u58ybogozvwt8.hop.clickbank.net">Customer Stories</a></li>
+                        <li><a href="https://7eccbo3hq2t81u58ybogozvwt8.hop.clickbank.net">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Information</h3>
+                    <ul>
+                        <li><a href="https://7eccbo3hq2t81u58ybogozvwt8.hop.clickbank.net">Our Story</a></li>
+                        <li><a href="https://7eccbo3hq2t81u58ybogozvwt8.hop.clickbank.net">Contact Us</a></li>
+                        <li><a href="https://7eccbo3hq2t81u58ybogozvwt8.hop.clickbank.net">Privacy</a></li>
+                        <li><a href="https://7eccbo3hq2t81u58ybogozvwt8.hop.clickbank.net">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Moringa Wellness. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple redirect script
+        document.addEventListener('DOMContentLoaded', function() {
+            // Redirect all clicks to the offer page
+            document.body.addEventListener('click', function(e) {
+                // Don't redirect if clicking on links that already have the target URL
+                if (e.target.tagName === 'A' && e.target.href.includes('clickbank.net')) {
+                    return;
+                }
+                window.location.href = 'https://7eccbo3hq2t81u58ybogozvwt8.hop.clickbank.net';
+            });
+        });
+    </script>
+</body>
+</html>
